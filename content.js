@@ -10,8 +10,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         const cells = row.querySelectorAll('td, th');
         if (cells.length >= 2) { // Ensure there are at least two columns
           const name = cells[0]?.innerText.trim() || "N/A";
-          const phone = cells[1]?.innerText.trim() || "N/A";
-          extractedData.push({ name, phone });
+          const age = cells[1]?.innerText.trim() || "N/A";
+          extractedData.push({ name, age });
         }
       });
     });

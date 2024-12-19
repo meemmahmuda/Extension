@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Populate table rows
       response.forEach(row => {
         const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${row.name}</td><td>${row.phone}</td>`;
+        tr.innerHTML = `<td>${row.name}</td><td>${row.age}</td>`;
         tableBody.appendChild(tr);
       });
     });
